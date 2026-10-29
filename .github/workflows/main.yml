@@ -10,6 +10,7 @@ jobs:
         build_type: [Debug, Release]
     env:
       GRADLE_OPTS: "-Dorg.gradle.jvmargs='-Xmx4G'"
+
     steps:
       - name: Prepare Environment
         run: sudo apt-get update && curl -Lo kitware-archive.sh https://apt.kitware.com/kitware-archive.sh && sudo bash ./kitware-archive.sh
